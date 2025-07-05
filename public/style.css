@@ -1,0 +1,58 @@
+.text {
+    margin: 40px 0 0 200px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 100px;
+   user-select:none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h1 {
+    color: rgb(255, 255, 255)
+}
+textarea{
+    width: 800px;
+    height: 200px;
+    margin: 30px 0 0 200px;
+    border-radius: 5px;
+    border: 10px solid rgb(107, 0, 102);
+    background-color: rgb(14, 11, 39);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+body {
+    background-image: url("https://i.pinimg.com/736x/6c/28/21/6c282131870f2f0767b180c54d17f22f.jpg");
+    background-size: cover; /* щоб картинка покривала весь екран*/
+
+}
+.klein{
+    margin: 0 0 20px 200px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+
+}
+.good{
+    background-color: green;
+     height: 20px;
+    width: 200px;
+}
+.not_good{
+    background-color: red;
+}
+.res{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.clock{
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(14, 11, 39);
+    width: 30%;
+    margin: -300px 0 0 1050px;
+    font-size: 30px;
+}
+.points{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
