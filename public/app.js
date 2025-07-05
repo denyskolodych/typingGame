@@ -1,4 +1,4 @@
-
+const url = window.location.origin
 let level = 1
 let max_time = 120
 let point = 0
@@ -8,7 +8,7 @@ score = document.getElementById('points')
 
   
 function get_words(level){
-   fetch(`http://localhost:3000/words/${level}`).then(response => response.json()).then(data => {
+   fetch(`${url}/words/${level}`).then(response => response.json()).then(data => {
       text = document.getElementById('text1')
       console.log(data[0])
       text.textContent = data.join(' ')
@@ -50,7 +50,7 @@ textarea.addEventListener('keydown', function(event) {
           res1.textContent = "Час вийшов"
       }
       else{
-      fetch('http://localhost:3000/isCorrect/',{
+      fetch(`${url}/isCorrect/`,{
          method: "POST",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({ message: textarea.value
