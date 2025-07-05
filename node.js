@@ -4,7 +4,7 @@ const cors = require('cors')
 app.use(express.static('public'))
 app.use(cors())
 app.use(express.json());
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 const fs = require('fs')
 let string = ""
 app.get('/words/:num', (req,res,next) =>{
